@@ -1,7 +1,7 @@
 console.log('conected')
-const usuarios = [ { cedula: '1', nombre: 'Edwin', telefono: '320' , edad: '45' },
-{ cedula: '2', nombre: 'Maria', telefono: '310' , edad: '16' },
-{ cedula: '3', nombre: 'Karina', telefono: '301' , edad: '34' },]
+const usuarios = [ { cedula: '88345123', nombre: 'Edwin', telefono: '320' , edad: '45' },
+{ cedula: '1095768900', nombre: 'Maria', telefono: '310' , edad: '16' },
+{ cedula: '1090378465', nombre: 'Karina', telefono: '301' , edad: '34' },]
 
   function validarUsuario(){
    let cedula= document.getElementById('cedula').value
