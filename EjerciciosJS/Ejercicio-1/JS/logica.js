@@ -35,7 +35,7 @@ btnAgregar.addEventListener('click', () => {
         <td>${productoSeleccionado.nombre}</td>
         <td>${productoSeleccionado.precio}</td>
         <td>${porcentDescuento.value}%</td>
-        <td>${valorTotal}</td>
+        <td>${parseInt(valorTotal)}</td>
     `;
     cuerpoTabla.appendChild(nuevaFila);
     selectProducto.focus();
