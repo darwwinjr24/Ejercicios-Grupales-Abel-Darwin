@@ -20,10 +20,10 @@
         <form>
             <label class="form-label">VALIDACION DE USUARIO</label>
         </div>
-        <input type="text" class="form-control mt-3" placeholder="Ingrese su Cédula">
+        <input type="text" class="form-control mt-3" id="cedula" placeholder="Ingrese su Cédula">
         <div class="container mt-5 col-3">
             <form>
-        <button type="button" class="btn btn-primary mt-3 btn-lg">Validar</button>
+        <button type="button" class="btn btn-primary mt-3 btn-lg" onclick="validarUsuario()">Validar</button>
         <button type="button" class="btn btn-dark mt-3 btn-lg">Crear nuevo usuario</button>
     </div>
 
@@ -35,6 +35,7 @@
 <table class="table">
     <thead>
       <tr>
+        <th scope="col">#</th>
         <th scope="col">RECHAZADAS</th>
         <th scope="col">ADMITIDAS</th>
        
@@ -45,5 +46,6 @@
   
 </div>
 </body>
+<script src="JS/logica.js"></script>
 </html>
 </form>
