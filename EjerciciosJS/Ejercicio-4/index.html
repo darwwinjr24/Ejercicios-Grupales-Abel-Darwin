@@ -26,12 +26,12 @@
                 <label for="tipoCredito" class="form-label">Tipo de crédito</label>
                 <select class="form-select" id="tipoCredito" required>
                     <option value="LII">Libre inversión</option>
-                    <option value="LIB">Libranza</option> 
+                    <option value="LIB">Libranza</option>
                 </select>
             </div>
             <label for="valorCredito" class="form-label">Valor crédito solicitado</label>
             <div class="input-group mb-3">
-                
+
                 <span class="input-group-text" id="basic-addon1">$</span>
                 <input type="number" class="form-control" id="valorCredito" required>
             </div>
@@ -39,10 +39,38 @@
                 <label for="cuotas" class="form-label">Cuántas cuotas?</label>
                 <input type="number" class="form-control" id="cuotas" required>
             </div>
-            <div class="mb-3">
+            <!--  <div class="mb-3">
                 <button type="button" class="btn btn-secondary" id="calcular" required>Calcular</button>
-            </div>
+            </div> -->
         </form>
+    </div>
+
+    <div class="container mt-4 col-3">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            id="calcular" required>Calcular
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Así quedará su crédito</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover" id="tabla">
+                            
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="aceptar">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="./JS/logica.js"></script>
 </body>
