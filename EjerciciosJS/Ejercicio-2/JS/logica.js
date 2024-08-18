@@ -4,13 +4,13 @@ const usuarios = [{ cedula: '88345123', nombre: 'Edwin', telefono: '320', edad: 
 { cedula: '1090378465', nombre: 'Karina', telefono: '301', edad: '34' },]
 
 //localStorage.setItem("usuariosEjer2", JSON.stringify(usuarios));
-//const usuariosStorage = JSON.parse(localStorage.getItem("usuariosEjer2")) || [];
+const usuariosStorage = JSON.parse(localStorage.getItem("usuariosEjer2")) || [];
 contador1 = 0
 contador2 = 0
 
 function validarUsuario() {
    const cedula = document.getElementById('cedula').value
-   const usuarioExiste = usuarios.find(usuario => usuario.cedula == cedula) || alert('Usuario no existe')
+   const usuarioExiste = usuarios.find(usuario => usuario.cedula == cedula)|| usuariosStorage.find(usuario => usuario.cedula == cedula)|| alert('Usuario no existe')
    console.log(usuarioExiste)
    if (usuarioExiste) {
       if (usuarioExiste.edad >= 18) {
