@@ -55,7 +55,9 @@ btnCalcular.addEventListener('click', () => {
     }
     cont++
     consumoUsuarios.push(usuarioIng)
+    
     //Tabla que mostrará los consumos por usuario con su respectivo valor
+    
     const nuevaFila = document.createElement('tr')
     if(consumo>20){
         nuevaFila.className = 'table-danger'
